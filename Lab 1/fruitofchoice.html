@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="myDiv">
-    <form>
+    <form action="/submit_data" method="post">
       <label for="fruit">Choose your fav fruit</label>
         <select name="choice" id="choise">
           <option value="select"> Select ur fav fruit</option>
@@ -22,9 +22,11 @@
           <option value="cantaloupes"> cantaloupes</option>
           <option value="other"> other</option> 
           <br/>
-         </select>  
-          <p>how much do you like this fruit?</p>
-          <input type="range" id="like" name="like" min="1" max="10">
+        </select>  
+        <p>how much do you like this fruit?</p>
+        <input type="range" id="like" name="like" min="1" max="10">
+        <input type="submit" value="Submit">
+        <p hidden>end of the webpage</p>
     </form>
     </div>
   </body>
