@@ -3,28 +3,45 @@
 <html>
   <head>
     <title> index.html </title>
+    <style>
+      .myDiv {
+            border: 10px;
+            text-align: center;
+            display: inline-block;
+          }
+      .centering {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+          }
+    </style>
   </head>
-  <body>
+  <body style="background-color: rgb(156, 217, 245);">
     <div>
       <!--this is a div block for basic title and intro-->
-      <div style="background-color: orange; padding: 20px; border: 2px lightpink"> 
+      <div style="background-image: url('images/sunny'); padding: 20px; border: 2px lightpink"> 
+      
       <br/>
       <h1> The best fruits for summer (though its almost over) </h1>
     </div>
-    <ol>
-      <table>
-          <li><h2>Watermelon</h2></li>
-          <img src="images/watermellon.jpg">
-          <li><h2>Blueberries</h2></li>
-          <img src="images/blueberries.jpg">
-          <li><h2>Raspberries</h2></li>
-          <img src="images/raspberries.jpg">
-          <li><h2>Strawberries</h2></li>
-          <img src="images/strawberries.jpg">
-          <li><h2>Grapes</h2></li>
-          <img src="images/grapes.jpg">
-      </table>
-    </ol>
+    <div class="centering">
+      <div class="myDiv">
+      <ol>
+        <table>
+            <li><h2>Watermelon</h2></li>
+            <img src="images/watermellon.jpg">
+            <li><h2>Blueberries</h2></li>
+            <img src="images/blueberries.jpg">
+            <li><h2>Raspberries</h2></li>
+            <img src="images/raspberries.jpg">
+            <li><h2>Strawberries</h2></li>
+            <img src="images/strawberries.jpg">
+            <li><h2>Grapes</h2></li>
+            <img src="images/grapes.jpg">
+        </table>
+      </ol>
+      </div>
+    </div>
     <p>To submit your favourite fruits for summer, click <a href="fruitofchoice.html">here</a></p>
     <p>For a list of top 10 fruits of the summer, click <a href="https://www.wholefoodsmarket.com/tips-and-ideas/summer/summer-produce-guide">here</a></p>
   </body>
