@@ -2,7 +2,7 @@
 <html>
   <head>
     <title> index.html </title>
-    <style>
+    <style> 
         .myDiv {
           border: 10px;
           background-color: lightblue;
@@ -14,7 +14,7 @@
     <div class="myDiv">
     <form action="/submit_data" method="post">
       <label for="fruit">Choose your fav fruit</label>
-        <select name="choice" id="choise">
+        <select name="choice" id="choise"> <!--dropdown opt below-->
           <option value="select"> Select ur fav fruit</option>
           <option value="kiwi"> kiwi</option>
           <option value="mangos"> mangos</option>
@@ -23,6 +23,10 @@
           <option value="other"> other</option> 
           <br/>
         </select>  
+        <br>
+        <p>what other fruit you like?</p>
+        <input type="text" id="fav_fruit" name="fav" pattern="[A-Za-z]">
+        <br>
         <p>how much do you like this fruit?</p>
         <input type="range" id="like" name="like" min="1" max="10">
         <input type="submit" value="Submit">
