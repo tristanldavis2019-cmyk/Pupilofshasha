@@ -41,12 +41,17 @@
 
   // Step 2.1.3 (<p> text change)
   document.getElementById("test").innerHTML="Text has been changed" 
+
+  function Required() {
+    alert("This field is required")
+  }
+
   </script>
 
   <button onclick="EventHandFunc();">ALERT</button>
   <button onclick="DispFunc();">Hide/Show</button>
   <button onclick="ImgFunc();">Change img</button>
   <button onclick="ThisFunc(this);">Was I clicked?</button>
-
+  <input type="text" onblur="Required()">
 </body>
 </html>
