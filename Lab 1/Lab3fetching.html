@@ -1,17 +1,17 @@
-bb<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 <p id="demo">Fetch a file to change this text.</p>
 
 <script>
-getText("fetchtext");
 
 async function getText(file) {
-  let x = await fetch(file);
-  let y = await x.text();
-  document.getElementById("demo").innerHTML = y;
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  document.getElementById("demo").innerHTML = myText;
 }
 </script>
 
+ <button onclick="getText('fetchLab3.txt');">Fetch the txt file contents</button>
 </body>
 </html>
