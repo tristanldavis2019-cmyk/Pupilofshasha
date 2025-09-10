@@ -4,7 +4,7 @@ bb<!DOCTYPE html>
 <p id="demo">Fetch a file to change this text.</p>
 
 <script>
-getText("Lab3.html");
+getText("fetchtext");
 
 async function getText(file) {
   let x = await fetch(file);
@@ -12,7 +12,6 @@ async function getText(file) {
   document.getElementById("demo").innerHTML = y;
 }
 </script>
-
 
 </body>
 </html>
