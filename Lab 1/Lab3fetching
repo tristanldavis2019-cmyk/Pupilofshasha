@@ -1,0 +1,18 @@
+bb<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Fetch a file to change this text.</p>
+
+<script>
+getText("Lab3.html");
+
+async function getText(file) {
+  let x = await fetch(file);
+  let y = await x.text();
+  document.getElementById("demo").innerHTML = y;
+}
+</script>
+
+
+</body>
+</html>
