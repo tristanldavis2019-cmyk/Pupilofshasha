@@ -1,17 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Fetcher</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    #demo {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button {
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
 <body>
-<p id="demo">Fetch a file to change this text.</p>
+  <div class="container">
+    <p id="demo">Fetch a file to change this text.</p>
+    <button onclick="getText('fetchLab3.txt');">Fetch the txt file contents</button>
+  </div>
 
-<script>
-
-async function getText(file) {
-  let myObject = await fetch(file);
-  let myText = await myObject.text();
-  document.getElementById("demo").innerHTML = myText;
-}
-</script>
-
- <button onclick="getText('fetchLab3.txt');">Fetch the txt file contents</button>
+  <script>
+    async function getText(file) {
+      let myObject = await fetch(file);
+      let myText = await myObject.text();
+      document.getElementById("demo").innerHTML = myText;
+    }
+  </script>
 </body>
 </html>
