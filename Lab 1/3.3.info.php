@@ -7,11 +7,11 @@
         <!-- <p><?= var_dump($_GET) ?></p>
         <p><?= var_dump($_POST) ?></p> -->
         <div> 
-            So <?php echo htmlspecialchars($_GET['name']) ?>, 
-            I hear you like <?php echo htmlspecialchars($_GET['animal']) ?> and
-            <?php echo htmlspecialchars($_GET['food']) ?>, why did you answer that 
+            So <?php echo htmlspecialchars($_POST['name']) ?>, 
+            I hear you like <?php echo htmlspecialchars($_POST['animal']) ?> and
+            <?php echo htmlspecialchars($_POST['food']) ?>, why did you answer that 
             WW2 question though? 
-            <?php echo (int)$_GET['WW2'] ?>, really?
+            <?php echo (int)$_POST['WW2'] ?>, really?
             Kind of weird... 
         </div>
     </body>
