@@ -5,6 +5,6 @@
     </head>
     <body>
         <h1>YOUR USER AGENT STRING IS: </h1>
-        <p><?php $_SERVER['HTTP_USER_AGENT']; ?></p>
+        <p><?php echo $_SERVER['HTTP_USER_AGENT']; ?></p>
     </body>
 </html>
