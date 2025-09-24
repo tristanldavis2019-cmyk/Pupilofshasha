@@ -4,8 +4,8 @@
         <title> 3.3.info.php </title>    
     </head>
     <body>
-        <p><?= var_dump($_GET) ?></p>
-        <p><?= var_dump($_POST) ?></p>
+        <!-- <p><?= var_dump($_GET) ?></p>
+        <p><?= var_dump($_POST) ?></p> -->
         <div> 
             So <?php echo htmlspecialchars($_GET['name']) ?>, 
             I hear you like <?php echo htmlspecialchars($_GET['animal']) ?> and
